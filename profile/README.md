@@ -12,8 +12,6 @@ Open **learning materials** and a **curated map of PQC research papers** — so 
 Prefer the [interactive paper map](https://post-quantum-cryptography-pqc.github.io/.github/) for search, category filter, and column sort.
 Static snapshot below (GitHub org READMEs cannot run JavaScript).
 
-440 papers indexed; 3 without a resolved publisher URL.
-
 | Title | Authors | Year | Venue | Category |
 |-------|---------|------|-------|----------|
 | [Don't Reject This: Key-Recovery Timing Attacks Due to Rejection-Sampling in HQC and BIKE](https://doi.org/10.46586/tches.v2022.i3.223-263) | Qian Guo; Clemens Hlauschek; Thomas Johansson; Norman Lahr; Alexander Nilsson; Robin Leander Schröder | 2022 | IACR Trans. Cryptogr. Hardw. Embed. Syst. (TCHES) | side-channel-analysis, pqc-implementation |
