@@ -5,11 +5,12 @@ Open **learning materials** and a **curated map of PQC research papers** — so 
 ## Start here
 
 - **[PQC Learn](https://post-quantum-cryptography-pqc.github.io/learning/)** — fundamentals → bridge → concepts → research tracks
+- **[Paper map (search / filter / sort)](https://post-quantum-cryptography-pqc.github.io/.github/)** — interactive table; click a title for the publisher URL (we do not host PDFs)
 
 ## Paper map
 
-Curated PQC research index. **Click a title** to open the publisher DOI /
-ePrint / venue page and download the PDF yourself. We do **not** host paper PDFs.
+Prefer the [interactive paper map](https://post-quantum-cryptography-pqc.github.io/.github/) for search, category filter, and column sort.
+Static snapshot below (GitHub org READMEs cannot run JavaScript).
 
 440 papers indexed; 3 without a resolved publisher URL.
 
@@ -455,8 +456,3 @@ ePrint / venue page and download the PDF yourself. We do **not** host paper PDFs
 | [A Knapsack-Type Public Key Cryptosystem Based on Arithmetic in Finite Fields](https://doi.org/10.1109/18.21214) | Benny Chor; Ronald L. Rivest | 1988 | IEEE Trans. Inf. Theory | knapsack-cryptosystem, finite-field-algorithm |
 | [A Critical Analysis of the Security of Knapsack Public-Key Algorithms](https://doi.org/10.1109/TIT.1984.1056938) | Yvo G. Desmedt, Student Member, IEEE; Joos P. Vandewalle, Senior Member, IEEE; Rene J. M. Govaerts, Member, IEEE | 1984 | IEEE Trans. Inf. Theory | cryptanalysis-algorithm, knapsack-cryptosystem |
 | [Cryptanalytic Attacks on the Multiplicative Knapsack Cryptosystem and on Shamir's Fast Signature Scheme](https://doi.org/10.1109/TIT.1984.1056942) | Andrew M. Odlyzko, Member, IEEE | 1984 | IEEE Trans. Inf. Theory | cryptanalysis-algorithm, lattice-attack |
-
-## Links
-
-- Learning site: https://post-quantum-cryptography-pqc.github.io/learning/
-- Org: https://github.com/Post-Quantum-Cryptography-PQC

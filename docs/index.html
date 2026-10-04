@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PQC Paper Map</title>
+  <style>
+    :root {
+      --bg: #f6f8fa;
+      --fg: #1f2328;
+      --muted: #656d76;
+      --border: #d0d7de;
+      --card: #ffffff;
+      --link: #0969da;
+      --accent: #0550ae;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--fg);
+      line-height: 1.5;
+    }
+    main {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 1.5rem 1.25rem 3rem;
+    }
+    h1 { margin: 0 0 0.35rem; font-size: 1.75rem; }
+    .lede { color: var(--muted); margin: 0 0 1.25rem; }
+    a { color: var(--link); }
+    .controls {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem 1rem;
+      align-items: flex-end;
+      margin-bottom: 1rem;
+      padding: 1rem;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+    }
+    label {
+      display: flex;
+      flex-direction: column;
+      gap: 0.3rem;
+      font-size: 0.85rem;
+      font-weight: 600;
+    }
+    input[type="search"], select {
+      min-width: 16rem;
+      max-width: 100%;
+      padding: 0.45rem 0.6rem;
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      font: inherit;
+      font-weight: 400;
+    }
+    #papers-count {
+      margin: 0;
+      font-size: 0.85rem;
+      font-weight: 400;
+      color: var(--muted);
+      align-self: center;
+    }
+    .table-wrap {
+      overflow-x: auto;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.9rem;
+    }
+    th, td {
+      padding: 0.55rem 0.7rem;
+      border-bottom: 1px solid var(--border);
+      text-align: left;
+      vertical-align: top;
+    }
+    th {
+      position: sticky;
+      top: 0;
+      background: #f6f8fa;
+      z-index: 1;
+    }
+    th button {
+      all: unset;
+      cursor: pointer;
+      font-weight: 700;
+      color: var(--accent);
+    }
+    th[aria-sort="ascending"] button::after { content: " ↑"; }
+    th[aria-sort="descending"] button::after { content: " ↓"; }
+    tr[hidden] { display: none; }
+    td:first-child { font-weight: 600; min-width: 14rem; }
+    .error { color: #cf222e; }
+    footer { margin-top: 1.25rem; color: var(--muted); font-size: 0.85rem; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>PQC Paper Map</h1>
+    <p class="lede">
+      Search, filter, and sort curated post-quantum cryptography papers.
+      Click a title to open the publisher DOI / ePrint page (we do not host PDFs).
+      <a href="https://github.com/Post-Quantum-Cryptography-PQC">Back to organization</a>
+      ·
+      <a href="https://post-quantum-cryptography-pqc.github.io/learning/">PQC Learn</a>
+    </p>
+
+    <div class="controls" id="papers-catalog">
+      <label>
+        Search
+        <input type="search" id="papers-search" placeholder="title, author, venue, category…" autocomplete="off" />
+      </label>
+      <label>
+        Category
+        <select id="papers-category">
+          <option value="">All categories</option>
+        </select>
+      </label>
+      <p id="papers-count" aria-live="polite">Loading…</p>
+    </div>
+
+    <div class="table-wrap">
+      <table id="papers-table">
+        <thead>
+          <tr>
+            <th data-sort="title"><button type="button">Title</button></th>
+            <th data-sort="authors"><button type="button">Authors</button></th>
+            <th data-sort="year"><button type="button">Year</button></th>
+            <th data-sort="venue"><button type="button">Venue</button></th>
+            <th data-sort="category"><button type="button">Category</button></th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+    <footer>Data: <code>papers.json</code> · Org: Post-Quantum-Cryptography-PQC</footer>
+  </main>
+  <script>
+(function () {
+  var search = document.getElementById("papers-search");
+  var category = document.getElementById("papers-category");
+  var countEl = document.getElementById("papers-count");
+  var table = document.getElementById("papers-table");
+  var tbody = table.tBodies[0];
+  var rows = [];
+  var sortKey = "year";
+  var sortDir = -1;
+  var colIndex = { title: 0, authors: 1, year: 2, venue: 3, category: 4 };
+
+  function esc(s) {
+    return String(s == null ? "" : s)
+      .replace(/&/g, "&amp;")
+      .replace(/</g, "&lt;")
+      .replace(/>/g, "&gt;")
+      .replace(/"/g, "&quot;");
+  }
+
+  function cellText(row, idx) {
+    var cell = row.cells[idx];
+    return cell ? (cell.textContent || "").trim() : "";
+  }
+
+  function applySort() {
+    var idx = colIndex[sortKey] != null ? colIndex[sortKey] : 2;
+    rows.sort(function (a, b) {
+      var av = cellText(a, idx);
+      var bv = cellText(b, idx);
+      if (sortKey === "year") {
+        return ((parseInt(av, 10) || 0) - (parseInt(bv, 10) || 0)) * sortDir;
+      }
+      return av.localeCompare(bv, undefined, { sensitivity: "base" }) * sortDir;
+    });
+    rows.forEach(function (r) { tbody.appendChild(r); });
+  }
+
+  function applyFilter() {
+    var q = (search.value || "").trim().toLowerCase();
+    var cat = (category.value || "").trim().toLowerCase();
+    var visible = 0;
+    rows.forEach(function (row) {
+      var text = row.getAttribute("data-text") || "";
+      var rowCat = row.getAttribute("data-category") || "";
+      var okQ = !q || text.indexOf(q) !== -1;
+      var okC = !cat || rowCat.split(",").some(function (p) { return p.trim() === cat; });
+      var show = okQ && okC;
+      row.hidden = !show;
+      if (show) visible += 1;
+    });
+    countEl.textContent = "Showing " + visible + " of " + rows.length + " papers";
+  }
+
+  function build(data) {
+    var cats = {};
+    data.forEach(function (r) {
+      (r.categories || String(r.category || "").split(",")).forEach(function (c) {
+        c = String(c).trim();
+        if (c) cats[c] = true;
+      });
+    });
+    Object.keys(cats).sort().forEach(function (c) {
+      var opt = document.createElement("option");
+      opt.value = c;
+      opt.textContent = c;
+      category.appendChild(opt);
+    });
+
+    data.forEach(function (r) {
+      var tr = document.createElement("tr");
+      var title = r.title || "";
+      var authors = r.authors || "";
+      var year = r.year || "";
+      var venue = r.venue || "";
+      var cat = r.category || "";
+      var url = r.url || "";
+      var hay = (title + " " + authors + " " + venue + " " + cat + " " + url).toLowerCase();
+      tr.setAttribute("data-year", year);
+      tr.setAttribute("data-category", cat.toLowerCase());
+      tr.setAttribute("data-text", hay);
+      var titleCell = url
+        ? '<a href="' + esc(url) + '" rel="noopener noreferrer">' + esc(title) + "</a>"
+        : esc(title);
+      tr.innerHTML =
+        "<td>" + titleCell + "</td>" +
+        "<td>" + esc(authors) + "</td>" +
+        "<td>" + esc(year) + "</td>" +
+        "<td>" + esc(venue) + "</td>" +
+        "<td>" + esc(cat) + "</td>";
+      tbody.appendChild(tr);
+      rows.push(tr);
+    });
+
+    Array.prototype.forEach.call(table.querySelectorAll("th[data-sort]"), function (th) {
+      var btn = th.querySelector("button");
+      if (!btn) return;
+      btn.addEventListener("click", function () {
+        var key = th.getAttribute("data-sort");
+        if (sortKey === key) sortDir = -sortDir;
+        else {
+          sortKey = key;
+          sortDir = key === "year" ? -1 : 1;
+        }
+        Array.prototype.forEach.call(table.querySelectorAll("th[data-sort]"), function (h) {
+          h.removeAttribute("aria-sort");
+        });
+        th.setAttribute("aria-sort", sortDir > 0 ? "ascending" : "descending");
+        applySort();
+        applyFilter();
+      });
+    });
+
+    search.addEventListener("input", applyFilter);
+    category.addEventListener("change", applyFilter);
+    applySort();
+    applyFilter();
+  }
+
+  fetch("papers.json")
+    .then(function (r) {
+      if (!r.ok) throw new Error("Failed to load papers.json (" + r.status + ")");
+      return r.json();
+    })
+    .then(build)
+    .catch(function (err) {
+      countEl.innerHTML = '<span class="error">' + esc(err.message) + "</span>";
+    });
+})();
+  </script>
+</body>
+</html>
