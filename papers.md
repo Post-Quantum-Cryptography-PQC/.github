@@ -5,8 +5,6 @@ ePrint / venue page and download the PDF yourself. We do **not** host paper PDFs
 
 439 papers indexed; 3 without a resolved publisher URL.
 
-For interactive search / filter / sort, see the [learning site paper map](https://post-quantum-cryptography-pqc.github.io/learning/papers/).
-
 | Title | Authors | Year | Venue | Category | Innovation |
 |-------|---------|------|-------|----------|------------|
 | [Defeating Low-Cost Countermeasures against Side-Channel Attacks in Lattice-based Encryption (Kyber case study)](https://doi.org/10.46586/tches.v2024.i2.795-818) | Prasanna Ravi; Thales Paiva; Dirmanto Jap; Jan-Pieter D’Anvers; Shivam Bhasin | 2024 | IACR Trans. Cryptogr. Hardw. Embed. Syst. (TCHES) | side-channel-analysis, pqc-implementation | Breaks sanity+FO failure checks; first valid-CT CC-SCA; greedy solver <½ BP inequalities; STM32 ≈325–7800 traces |
