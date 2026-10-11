@@ -10,7 +10,7 @@ GitHub organization special repository: the profile README becomes the [org home
 - **Org homepage**: https://github.com/Post-Quantum-Cryptography-PQC
 - **Interactive paper map**: https://post-quantum-cryptography-pqc.github.io/.github/
 - **Learning site**: https://post-quantum-cryptography-pqc.github.io/learning/
-- **Parent lab**: [pqc-lab](https://github.com/Post-Quantum-Cryptography-PQC/pqc-lab) (consumes this tree as `learn/github`)
+- **Parent lab**: [pqc-lab](https://github.com/Post-Quantum-Cryptography-PQC/pqc-lab) (consumes this tree as `share/github`)
 - **License**: CC BY 4.0 (see `LICENSE`)
 
 ## Table of contents
@@ -31,7 +31,7 @@ GitHub organization special repository: the profile README becomes the [org home
 | [`docs/papers.json`](docs/papers.json) | Catalog data for the interactive page |
 | [`.github/workflows/deploy-pages.yml`](.github/workflows/deploy-pages.yml) | Deploys `docs/` to GitHub Pages |
 
-Do **not** hand-edit the generated catalog files for long. Refresh them from the lab index with `learn/export_papers_catalog.py`.
+Do **not** hand-edit the generated catalog files for long. Refresh them from the lab index with `share/export_papers_catalog.py`.
 
 ## Requirements
 
@@ -52,11 +52,11 @@ Recommended workflow from the parent lab:
 ```bash
 cd pqc-lab
 git submodule update --init --recursive
-python3 learn/export_papers_catalog.py
-# review learn/github/profile/README.md and learn/github/docs/
-# commit inside learn/github, then:
-bash learn/sync_learning_repos.sh
-git add learn/github && git commit -m 'chore: bump .github profile submodule'
+python3 share/export_papers_catalog.py
+# review share/github/profile/README.md and share/github/docs/
+# commit inside share/github, then:
+bash share/sync_learning_repos.sh
+git add share/github && git commit -m 'chore: bump .github profile submodule'
 ```
 
 Pages deploy on push to `main` via `deploy-pages.yml` (artifact path: `docs`).
@@ -85,7 +85,7 @@ Pages deploy on push to `main` via `deploy-pages.yml` (artifact path: `docs`).
 | [pqc-learning-public](https://github.com/Post-Quantum-Cryptography-PQC/pqc-learning-public) | Public curriculum source |
 | [pqc-learning-private](https://github.com/Post-Quantum-Cryptography-PQC/pqc-learning-private) | Private explainers + graphs |
 | [learning](https://github.com/Post-Quantum-Cryptography-PQC/learning) | Curriculum Pages host (`/learning/`) |
-| [pqc-lab](https://github.com/Post-Quantum-Cryptography-PQC/pqc-lab) | Lab monorepo; pins this tree as `learn/github` |
+| [pqc-lab](https://github.com/Post-Quantum-Cryptography-PQC/pqc-lab) | Lab monorepo; pins this tree as `share/github` |
 
 ## License
 
