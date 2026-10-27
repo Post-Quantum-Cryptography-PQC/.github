@@ -531,7 +531,7 @@
       "pqc-implementation"
     ],
     "innovation": "Dual-clock FCLK/SCLK + interlaced ExpandA/MPAM + pre-check/dynamic Sign; Artix-7 24833/15653/8/10.5 (~9488 EqS); ATP 1.21-5.49x vs SOTA at strengths 2/3/5",
-    "url": "|"
+    "url": "https://doi.org/10.1109/TCSI.2025.3646585"
   },
   {
     "title": "An Attack on High Rate McEliece Cryptosystems Using Generalized Reed Solomon Codes with Weight 2 Mask",
@@ -570,7 +570,7 @@
       "pqc-implementation"
     ],
     "innovation": "Runtime-reconfigurable EReA for CMcE Encap/Decap: four-way MVM + 32-lane Horner PolyEval on Artix-7; ATP up to 1.98x/5.19x vs [8]/[12] at 348864",
-    "url": "https://doi.org/10.1109/TVLSI.2026.3716302"
+    "url": "https://ieeexplore.ieee.org/document/"
   },
   {
     "title": "An Improved Hybrid Dual Attack on LWE with Sparse Secrets and its Application to FHE",
@@ -1559,7 +1559,7 @@
       "pqc-implementation"
     ],
     "innovation": "First Scloud+.KEM HW: ternary block MatM + unrolled Keccak; 40nm 1.21 mm2, L1 46.3/48.8/49.4 us @150 MHz",
-    "url": "|"
+    "url": "https://doi.org/10.1109/TCSI.2026.3673856"
   },
   {
     "title": "Faster Post-Quantum zkSNARK Provers Using the LCH Polynomial Basis",
@@ -2133,8 +2133,8 @@
       "pqc-algorithm",
       "pqc-implementation"
     ],
-    "innovation": "Ajtai PCS decoupling NTT-friendly commit from binary-extension eval; Binius/Flock hash SNARKs ≤1.2× hash-PCS prover; LaBRADOR",
-    "url": ""
+    "innovation": "Ajtai PCS decoupling NTT-friendly commit from binary-extension eval; Binius/Flock hash SNARKs ≤1.2× hash-PCS prover; LaBRADOR \\",
+    "url": "https://eprint.iacr.org/2026/2103"
   },
   {
     "title": "Lattice-based NIKE with optimal tightness",
@@ -2423,7 +2423,7 @@
       "pqc-implementation"
     ],
     "innovation": "SUCRE shuffle-unmask RS gadget; πnt-MLWR; M4 4-6× vs CGL+24, higher RAM (ePrint 2026/2248; TCHES 2026.1 twin)",
-    "url": "https://doi.org/10.46586/tches.v2026.i1.618-659"
+    "url": "https://eprint.iacr.org/2026/2248"
   },
   {
     "title": "ML-DSA masking sweetened with SUCRE: Shuffle-and-Unmask Countermeasure for REjection sampling",
@@ -3335,8 +3335,8 @@
       "cryptanalysis-algorithm",
       "side-channel-attack"
     ],
-    "innovation": "MoM noise-rate estimator + Alg. 1 relation flip from",
-    "url": ""
+    "innovation": "MoM noise-rate estimator + Alg. 1 relation flip from \\",
+    "url": "https://eprint.iacr.org/2026/1712"
   },
   {
     "title": "Strided Frobenius Additive FFT and its Application to HQC",
@@ -3466,7 +3466,7 @@
       "isogeny-algorithm"
     ],
     "innovation": "Community-curated list of seven foremost unsolved problems in isogeny-based cryptography (editor Krijn Reijnders; expert short write-ups), with peer-reviewed solutions andâ¦",
-    "url": ""
+    "url": "https://eprint.iacr.org/2026/1431"
   },
   {
     "title": "The McEliece Cryptosystem After Nearly Five Decades: A Survey of Security, Cryptanalysis, and Future Directions",
@@ -4208,7 +4208,7 @@
       "pqc-implementation"
     ],
     "innovation": "Compact In-Hash-Out SHA3 + NMI-NTT (0 BRAM); Artix-7 5487/3426/1548/3.5/2 @185 MHz; ATP up to ~80% better vs iterative-NTT Kyber peers",
-    "url": "|"
+    "url": "https://doi.org/10.1109/TCSI.2024.3443238"
   },
   {
     "title": "Efficient Number Theoretic Transform Architecture for CRYSTALS-Kyber",
@@ -4286,7 +4286,7 @@
       "pqc-implementation"
     ],
     "innovation": "Dual low-fanout F2 systemizer + entry/GE feedback overlap; UltraScale+ keygen TxA +11.9-43.2% vs McKeycutter [16]; Artix-7 McE-3488 1.70 ms",
-    "url": "|"
+    "url": "https://doi.org/10.1109/TCSI.2025.3528119"
   },
   {
     "title": "Full Key-Recovery Cubic-Time Template Attack on Classic McEliece Decapsulation",
@@ -5224,7 +5224,7 @@
       "pqc-implementation"
     ],
     "innovation": "AES-based multi-instance puncturable PRF (PPRF) in the ideal cipher model, as a drop-in replacement for salted hash-based GGM trees used in MPCitH signatures (12x-55x faster onâ¦",
-    "url": ""
+    "url": "https://eprint.iacr.org/2024/040"
   },
   {
     "title": "Gadget-based Masking of Streamlined NTRU Prime Decapsulation in Hardware",
@@ -5409,7 +5409,7 @@
       "circuit-design"
     ],
     "innovation": "First CUDA SPHINCS+: RTX 3090 up to 44391/24997/11401 signs/s (L1/3/5); GTX 1070 ~2.10x/1.03x/9.86x sign/keygen/verify vs Sun et al. GTX 1080 L1",
-    "url": "|"
+    "url": "https://doi.org/10.1109/TCSI.2024.3370802"
   },
   {
     "title": "PUF-Kyber: Design of a PUF-Based Kyber Architecture Benchmarked on Diverse ARM Processors",
@@ -5747,7 +5747,7 @@
       "pqc-implementation"
     ],
     "innovation": "Kyber KCF-MM + mixed radix-2/4 NTT + lazy-last-layer + single-bank PWM; Artix-7 7.3k/3.2k/2.2k/5/4 @200 MHz; ~12% better ATP",
-    "url": "|"
+    "url": "https://doi.org/10.1109/TCSI.2023.3306347"
   },
   {
     "title": "Improved Gadgets for the High-Order Masking of Dilithium",
@@ -5800,7 +5800,7 @@
       "pqc-implementation"
     ],
     "innovation": "First Karatsuba-algorithm (KA) FPGA accelerator (KINA) for lightweight RBLWE-ENC, with tunable parallelism parameter u. Two-term KA splits…",
-    "url": ""
+    "url": "https://doi.org/10.1109/TVLSI.2023.3302289"
   },
   {
     "title": "LEAP: Lightweight and Efficient Accelerator for Sparse Polynomial Multiplication of HQC",
@@ -5826,7 +5826,7 @@
       "pqc-implementation"
     ],
     "innovation": "Smallest Dilithium-V accel ~13.9k LUT; ZUS+ AT +36.7/35.4/42.3%; TSMC 65nm 0.227 mm2 @1.176 GHz; SoC 6-261x vs SW",
-    "url": "|"
+    "url": "https://doi.org/10.1109/TCSI.2023.3274599"
   },
   {
     "title": "Lightweight Polynomial Multiplication Accelerator for NTRU Using Shared SRAM",
@@ -5852,7 +5852,7 @@
       "pqc-implementation"
     ],
     "innovation": "First scaled Min-sum ASIC for high-w QC-MDPC McEliece; 2-stage scaling + rebalancing; GF 22FDX 0.308 ms vs 0.357 ms 1-stage",
-    "url": "|"
+    "url": "https://doi.org/10.1109/TCSI.2023.3319358"
   },
   {
     "title": "Low-Cost Shuffling Countermeasures Against Side-Channel Attacks for NTT-Based Post-Quantum Cryptography",
@@ -6178,7 +6178,7 @@
       "system-architecture"
     ],
     "innovation": "First GPU DP2A for Frodo/Saber; Frodo 4.37x vs [12] on V100; first Saber GPU 124418/120463/31658 KX/s on RTX3080/V100/T4",
-    "url": "https://doi.org/10.1109/TCSI.2022.3176966"
+    "url": "https://github.com/benlwk/DPCrypto"
   },
   {
     "title": "Efficient Error Detection Architectures for Postquantum Signature Falcon’s Sampler and KEM SABER",
@@ -6256,7 +6256,7 @@
       "pqc-implementation"
     ],
     "innovation": "SIKE-prime pipelined Mont mul + 1-4x CPU-like SIDH/SIKE; V7 mul >=2.30/1.60/1.36x time/AT/thr; Kintex E+D 3.11-6.59 ms",
-    "url": "|"
+    "url": "https://doi.org/10.1109/TCSI.2021.3129589"
   },
   {
     "title": "Faster Constant-Time Decoder for MDPC Codes and Applications to BIKE KEM",
@@ -6752,7 +6752,7 @@
       "pqc-implementation"
     ],
     "innovation": "20-instr Kyber KEM ISA + CT/GS Barrett butterfly + dual NTT methods; Artix-7 Enc+Dec 148/209/286 us; 65 nm ASIC 104 kGE + 190 KB SRAM",
-    "url": "|"
+    "url": "https://doi.org/10.1109/TCSI.2021.3106639"
   },
   {
     "title": "LWRpro: An Energy-Efficient Configurable Crypto-Processor for Module-LWR",
@@ -6882,7 +6882,7 @@
       "pqc-implementation"
     ],
     "innovation": "Artix-7 NewHope 10285/10345 LUT, 0 BRAM, 153/152 MHz, 39.8/61.7/21.4 us; -45% LUT/-30% FF vs [5]; ~12.1x ATP vs NewHope-Simple [6]",
-    "url": "|"
+    "url": "https://doi.org/10.1109/TCSI.2019.2956651"
   },
   {
     "title": "Area-Time-Efficient Code-Based Postquantum Key Encapsulation Mechanism on FPGA",
@@ -6908,7 +6908,7 @@
       "pqc-implementation"
     ],
     "innovation": "BRAM-native 7-bit QC-LDGM rotation + first SCA-hardened LEDAsig (1st/2nd-order TI); Spartan-6 46/117/203 ms at 454/622/1142 slices",
-    "url": "|"
+    "url": "https://doi.org/10.1109/TCSI.2020.2984026"
   },
   {
     "title": "Cortex-M4 optimizations for {R,M}LWE schemes",
@@ -7041,7 +7041,7 @@
       "pqc-implementation"
     ],
     "innovation": "FO-lifted CCA lattice IBE + Stratix IV LIBE (RNG/SHA-3/R2-NTT); n=1024 enc/dec 21.10/24.87 us @187.62 MHz",
-    "url": "|"
+    "url": "https://doi.org/10.1109/TCSI.2020.2981089"
   },
   {
     "title": "New Hybrid Method for Isogeny-Based Cryptosystems Using Edwards Curves",
@@ -7080,7 +7080,7 @@
       "circuit-design"
     ],
     "innovation": "First const-time SIKE R2 AArch64 asm for p434/p610 (+compressed); A55/A75 Totals 52/27 ms (p434), 160/77 ms (p610); Fp mul up to ~5-8x vs SIDH-v3.2 C",
-    "url": "|"
+    "url": "https://doi.org/10.1109/TCSI.2020.2979410"
   },
   {
     "title": "Parameterized Hardware Accelerators for Lattice-Based Cryptography and Their Application to the HW/SW Co-Design of qTESLA",
@@ -7536,7 +7536,7 @@
       "pqc-implementation"
     ],
     "innovation": "Constant-geometry pipelined FFT mul + low-HW p; Spartan-6 ~3.5x vs [19]; LWE-512 6.3 us / SHE-1024 33.1 us",
-    "url": "|"
+    "url": "https://doi.org/10.1109/TCSI.2014.2350431"
   },
   {
     "title": "A Distinguisher for High-Rate McEliece Cryptosystems",
