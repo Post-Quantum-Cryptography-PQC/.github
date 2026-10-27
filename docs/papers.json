@@ -153,7 +153,7 @@
       "pqc-implementation"
     ],
     "innovation": "Artix-7 cSHAKE FrodoKEM all levels; 28x block MAC + 3-BRAM share; 0.47/1.00/1.71 Mcycles total @125.5 MHz; claimed best ATP vs standard-compliant HW",
-    "url": "https://tches.iacr.org/"
+    "url": "https://doi.org/10.46586/tches.v2026.i3.171-197"
   },
   {
     "title": "A High-Performance ML-KEM Architecture With Task-Level Parallelism",
@@ -349,7 +349,7 @@
       "pqc-implementation"
     ],
     "innovation": "Unified compliant FrodoKEM FPGA+ASIC; 12 run-time modes + T; Artix-7 T64 2599/2338/2147 ops/s; first NANGATE45 ASIC 7721/6946/6378 ops/s",
-    "url": "https://tches.iacr.org/"
+    "url": "https://doi.org/10.46586/tches.v2026.i3.881-907"
   },
   {
     "title": "Accelerating HQC with Additive FFT",
@@ -362,7 +362,7 @@
       "code-based-cryptosystem"
     ],
     "innovation": "Additive FFT+CRT for just-above-2^n HQC polymuls; cache FFT(keys)+reuse r2; AVX2/GFNI/M1/Pi4; GFNI cache-key HQC-1 Enc/Dec 110/245 kcyc",
-    "url": "https://tches.iacr.org/"
+    "url": "https://doi.org/10.46586/tches.v2026.i2.520-544"
   },
   {
     "title": "Accelerating HQC with Additive FFT",
@@ -427,7 +427,7 @@
       "code-based-cryptosystem"
     ],
     "innovation": "FAFFT+CRT for near-2^n HQC muls on M4; EEA RS+F256 SIMD; HQC-1 Enc/Dec -19.5%/-20.4% vs radix-16 SOTA; open CC0",
-    "url": "https://tches.iacr.org/"
+    "url": "https://doi.org/10.46586/tches.v2026.i3.377-401"
   },
   {
     "title": "Additive FFTs for HQC on ARM Cortex-M4, Revisited",
@@ -674,7 +674,7 @@
       "multivariate-cryptosystem"
     ],
     "innovation": "EMI+AVX2/VNNI QR-UOV; (127,3) SL-I 5.1x/3.6x/5.7x vs Round2 ref; competitive with UOV",
-    "url": "https://tches.iacr.org/"
+    "url": "https://doi.org/10.46586/tches.v2026.i2.325-346"
   },
   {
     "title": "Barriers for Transparent Algebraic Generation of Hard Supersingular Curves",
@@ -779,7 +779,7 @@
       "proof-system"
     ],
     "innovation": "AO-permâ'SmallWood PQ sig; Anemoi 9.5â\"15.5KB / 24â\"35K R1CS (4â\"6Ã-/5â\"8Ã- vs Loquat); Aurora agg 0.26KB/sig",
-    "url": "https://tches.iacr.org/"
+    "url": "https://doi.org/10.46586/tches.v2026.i4.731-758"
   },
   {
     "title": "CauchyFold: Residue-Optimal High-Arity Lattice Folding via Scaled Cauchy Challenges",
@@ -1676,7 +1676,7 @@
       "lattice-cryptosystem"
     ],
     "innovation": "First Falcon/DLP cold-boot via FP key algebra; sim Tables 1â\"2; Pi 4/6 Falcon-512; ~50% key packing countermeasure",
-    "url": "https://tches.iacr.org/"
+    "url": "https://doi.org/10.46586/tches.v2026.i3.1007-1031"
   },
   {
     "title": "Fully Homomorphic Encryption with Chosen-Ciphertext Security from LWE",
@@ -1990,7 +1990,7 @@
       "system-architecture"
     ],
     "innovation": "OTBN bn.mulv ISE vs OTBNTW; SW Mont.+lazy; up to 17% cycles, +6% ASIC area; better TAP",
-    "url": "https://tches.iacr.org/"
+    "url": "https://doi.org/10.46586/tches.v2026.i2.495-519"
   },
   {
     "title": "Information set decoding for ring-linear codes",
@@ -2029,7 +2029,7 @@
       "pqc-implementation"
     ],
     "innovation": "NTT layer refresh vs mask+shuffle for Kyber PC-SCA; M4 434.6k cyc mask+refresh; PI flattened across layers",
-    "url": "https://tches.iacr.org/"
+    "url": "https://doi.org/10.46586/tches.v2026.i1.472-499"
   },
   {
     "title": "Keep Track of Your Errors: Solving ILWE and Improving Attacks on ML-DSA",
@@ -2081,7 +2081,7 @@
       "code-based-cryptosystem"
     ],
     "innovation": "First BM power SCA on Classic McEliece decaps; 1-trace/alpha on M4; full L <50s + KM23 g(x) <1min",
-    "url": "https://tches.iacr.org/"
+    "url": "https://doi.org/10.46586/tches.v2026.i4.838-862"
   },
   {
     "title": "L-BAS: A Lattice-Based Blind Adaptor Signature Scheme",
@@ -3362,7 +3362,7 @@
       "pqc-implementation"
     ],
     "innovation": "RR-LWE + BRM-LWE fine-grained params; up to ~37% faster than ML-KEM-1024 AVX2",
-    "url": "https://tches.iacr.org/"
+    "url": "https://doi.org/10.46586/tches.v2026.i3.1032-1055"
   },
   {
     "title": "Subspace Guessing and Rank-Metric Solvers with Hints",
@@ -3453,7 +3453,7 @@
       "side-channel-hardening"
     ],
     "innovation": "Tempo clear-Ï OEKE + CT SampleNTT (FLS/RMD/SMD); Oracle-MLWE; M4 Tempoâªtime-safe NoIC",
-    "url": "https://tches.iacr.org/"
+    "url": "https://doi.org/10.46586/tches.v2026.i3.744-768"
   },
   {
     "title": "The Isogeny Problems",
@@ -3662,7 +3662,7 @@
       "lattice-cryptosystem"
     ],
     "innovation": "TW (3Ã-binary32) Falcon sign on M4F; DP sampler errs to 2^-37 vs proof 2^-46; TW â¤2^-57; ~1.84Ã- cycles vs int-emu binary64",
-    "url": "https://tches.iacr.org/"
+    "url": "https://doi.org/10.46586/tches.v2026.i2.347-371"
   },
   {
     "title": "Two-Anchor Holdout/Hermite: Solving the TII-254 McEliece Key Recovery Challenge",
@@ -3727,7 +3727,7 @@
       "lattice-cryptosystem"
     ],
     "innovation": "Vectorized Falcon BaseSampler (6 ISAs); AVX2 core 8.4Ã-; RVV FFT 4.1â\"4.7Ã-; Falcon-512 sign +23%/+36%/+59% (AVX2/AVX-512F/RV64GCVB)",
-    "url": "https://tches.iacr.org/"
+    "url": "https://doi.org/10.46586/tches.v2026.i1.302-324"
   },
   {
     "title": "Veloz: Efficient and Flexible Distribution Framework for Code-Based Polynomial Commitment Scheme",
@@ -3753,7 +3753,7 @@
       "pqc-implementation"
     ],
     "innovation": "Lean-discovered iterative BeneÅ¡ control bits; AVX2 cbiteravx+ipermsort 0.71Ã- vs libmceliece (29% faster); McEliece keygen 0.926â\"0.972Ã-",
-    "url": "https://tches.iacr.org/"
+    "url": "https://doi.org/10.46586/tches.v2026.i3.306-333"
   },
   {
     "title": "Veriï¬ed non-recursive calculation of BeneÅ¡ networks applied to Classic McEliece",
@@ -3792,7 +3792,7 @@
       "lattice-cryptosystem"
     ],
     "innovation": "CPA on Falcon pre-image after mul-only FP masking; fix GMRR22 mantissa bound (~11 bits); exponent guess <=20; Falcon-512 break ~1200-1300 traces (CW Lite/STM32F405)",
-    "url": "https://tches.iacr.org/"
+    "url": "https://doi.org/10.46586/tches.v2026.i2.686-708"
   },
   {
     "title": "Wombat: Post-Quantum Blind Signature from Standard Group Action Assumptions and More",
@@ -3974,7 +3974,7 @@
       "lattice-cryptosystem"
     ],
     "innovation": "First passive single-trace CBD attack on pqm4 Kyber768; Buf marginalization; EM-adaptive templates + POIe; cross-device KeyGen ~100% SR; Encaps from KeyGen ~70-76% avg",
-    "url": "https://tches.iacr.org/"
+    "url": "https://doi.org/10.46586/tches.v2025.i3.470-492"
   },
   {
     "title": "AGB 2.0: Refined Algebraic Attack against Regular Syndrome Decoding for PCG Applications",
@@ -4013,7 +4013,7 @@
       "lattice-cryptosystem"
     ],
     "innovation": "CryptoLine+ISL range analysis for NTT/iNTT; verifies ML-DSA/ML-KEM AVX2/aarch64/M4 incl. Barrett/Plantard; beats QFBV timeouts",
-    "url": "https://tches.iacr.org/"
+    "url": "https://doi.org/10.46586/tches.v2025.i3.668-692"
   },
   {
     "title": "An Efficient and Reconfigurable Post-Quantum Crypto-Processor for SPHINCS+",
@@ -4731,7 +4731,7 @@
       "lattice-cryptosystem"
     ],
     "innovation": "Quantum sieve circuits+QEC cost; ML-KEM/ML-DSA unbroken but 15-27 bit security drop vs classical sieve",
-    "url": "https://tches.iacr.org/"
+    "url": "https://doi.org/10.46586/tches.v2025.i4.437-462"
   },
   {
     "title": "RACE: A Rapid ARM Cryptographic Engine for Code-Based Classic McEliece PQC Scheme",
@@ -4757,7 +4757,7 @@
       "lattice-cryptosystem"
     ],
     "innovation": "Rejection-sampling SCA: ILP on rejected (c,z) recovers s1; Dil2/3/5 100% SR in ~104/201/75s; single-trace DL SPA on M4",
-    "url": "https://tches.iacr.org/"
+    "url": "https://doi.org/10.46586/tches.v2025.i4.817-847"
   },
   {
     "title": "Rudraksh: A Compact and Lightweight Post-Quantum Key-Encapsulation Mechanism",
@@ -4770,7 +4770,7 @@
       "lattice-cryptosystem"
     ],
     "innovation": "MLWE KEM-poly64 + ASCON-XOF FPGA; ~2813 LUT Virtex-7; ~3x area vs compact Kyber claims",
-    "url": "https://tches.iacr.org/"
+    "url": "https://doi.org/10.46586/tches.v2025.i2.647-680"
   },
   {
     "title": "RVSLH: Acceleration of Postquantum Standard SLH-DSA With Customized RISC-V Processor",
@@ -4887,7 +4887,7 @@
       "pqc-implementation"
     ],
     "innovation": "Minal codes: 4-8% shorter ML-KEM CT or ~8% PK; DFR w/o indep. assum.; isochronous 2D/4D decode",
-    "url": "https://tches.iacr.org/"
+    "url": "https://doi.org/10.46586/tches.v2025.i3.139-163"
   },
   {
     "title": "The May-Ozerov Algorithm for Syndrome Decoding is \"Galactic\"",
@@ -5030,7 +5030,7 @@
       "pqc-implementation"
     ],
     "innovation": "CV32E40P SIMD for Kyber+Dilithium; Keccak 404 cyc; HVT 200 MHz 2.01/2.13 mW Kyber-512/Dilithium-2; claimed best PPAP",
-    "url": "https://tches.iacr.org/"
+    "url": "https://doi.org/10.46586/tches.v2024.i2.130-153"
   },
   {
     "title": "A Lightweight and Efficient Encryption/Decryption Coprocessor for RLWE-Based Cryptography",
@@ -5056,7 +5056,7 @@
       "lattice-cryptosystem"
     ],
     "innovation": "First HAWK discrete-sampler SPA on CW Lite/STM32F3; non-prof 7%/98% and profiled 100% values; residual Module-LIP beta; light patches stop non-prof attacks",
-    "url": "https://tches.iacr.org/"
+    "url": "https://doi.org/10.46586/tches.v2024.i4.156-178"
   },
   {
     "title": "A Post-Quantum Cryptography Recommendation System with TLS Validation for Heterogeneous Environments",
@@ -5121,7 +5121,7 @@
       "lattice-cryptosystem"
     ],
     "innovation": "A2B carry-chain stuck-at FA on masked Kyber Decode; BP key recovery; EMFI STM32F4 ~35k ineq / 1.86M faults vs sim 30k/161k",
-    "url": "https://tches.iacr.org/"
+    "url": "https://doi.org/10.46586/tches.v2024.i2.844-869"
   },
   {
     "title": "Compact Instruction Set Extensions for Kyber",
@@ -5147,7 +5147,7 @@
       "lattice-cryptosystem"
     ],
     "innovation": "Tensor-Core Kyber NTT 2-/3-phase (~75% fewer matmuls vs scanning); R3080 polyvec_ntt 8.61ns; Kyber-1024 2074/1587/8458/1336 kops KeyGen/Enc/Dec/KX",
-    "url": "https://tches.iacr.org/"
+    "url": "https://doi.org/10.46586/tches.v2024.i2.25-63"
   },
   {
     "title": "Correction Fault Attacks on Randomized CRYSTALS-Dilithium",
@@ -5382,7 +5382,7 @@
       "multivariate-cryptosystem"
     ],
     "innovation": "Nibble-sliced MAYO: AVX2 sign up to 3.2x vs bitsliced; M4 M4R up to ~21% faster sign",
-    "url": "https://tches.iacr.org/"
+    "url": "https://doi.org/10.46586/tches.v2024.i2.252-275"
   },
   {
     "title": "Optimized Hardware-Software Co-Design for Kyber and Dilithium on RISC-V SoC FPGA",
@@ -5461,7 +5461,7 @@
       "lattice-cryptosystem"
     ],
     "innovation": "ARMv7-M Keccak lazy-ror+pipeline + Dilithium Plantard multi-moduli NTT; Keccak up to 24.8%/21.4% M3/M4; Dilithium 15-24%/14-16%; Kyber +13-15%",
-    "url": "https://tches.iacr.org/"
+    "url": "https://doi.org/10.46586/tches.v2024.i2.1-24"
   },
   {
     "title": "Short Signatures from the Weil Pairing",
@@ -5487,7 +5487,7 @@
       "pqc-implementation"
     ],
     "innovation": "First practical single-trace SASCA on HQC RS; decoder 100% SR STM32; encoder 66-81%; full shuffle",
-    "url": "https://tches.iacr.org/"
+    "url": "https://doi.org/10.46586/tches.v2024.i2.64-87"
   },
   {
     "title": "Super-K: A Superscalar CRYSTALS-KYBER Processor Based on Efficient Arithmetic Array",
@@ -5591,7 +5591,7 @@
       "code-based-cryptosystem"
     ],
     "innovation": "First CC cache-timing on HQC ref; PC oracle via sparse sampler; 53857 traces vs 866k GHJ+22; Round-4 patched",
-    "url": "https://tches.iacr.org/"
+    "url": "https://doi.org/10.46586/tches.v2023.i3.136-163"
   },
   {
     "title": "COPMA: Compact and Optimized Polynomial Multiplier Accelerator for High-Performance Implementation of LWR-Based PQC",
@@ -5787,7 +5787,7 @@
       "circuit-design"
     ],
     "innovation": "Hybrid+NTT masking keeps small-secret mul; Artix-7 HybridPolyMul 25k LUT vs naive 62k; TVLA 100k pass",
-    "url": "https://tches.iacr.org/"
+    "url": "https://doi.org/10.46586/tches.v2023.i3.366-390"
   },
   {
     "title": "KINA: Karatsuba Initiated Novel Accelerator for Ring-Binary-LWE (RBLWE)-Based Post-Quantum Cryptography",
@@ -5905,7 +5905,7 @@
       "pqc-implementation"
     ],
     "innovation": "Revisits masked Dilithium sensitivity maps/gadgets vs MGTF19; STM32L4 Level-3 Sign d=2 ~13.9M (rand) vs 23.6M (deter.) kCycles",
-    "url": "https://tches.iacr.org/"
+    "url": "https://doi.org/10.46586/tches.v2023.i4.58-79"
   },
   {
     "title": "Pushing the Limits of Generic Side-Channel Attacks on LWE-based KEMs - Parallel PC Oracle Attacks on Kyber KEM and Beyond",
@@ -5918,7 +5918,7 @@
       "lattice-cryptosystem"
     ],
     "innovation": "Parallel PC oracle recovers P secret bits/query; pqm4 Kyber 2.89-7.65x fewer queries vs binary PC",
-    "url": "https://tches.iacr.org/"
+    "url": "https://doi.org/10.46586/tches.v2023.i2.418-446"
   },
   {
     "title": "Reconfigurable and High-Efficiency Polynomial Multiplication Accelerator for CRYSTALS-Kyber",
@@ -6048,7 +6048,7 @@
       "code-based-cryptosystem"
     ],
     "innovation": "First key-recovery power SCA on Classic McEliece via additive-FFT ELP leakage; MLP+single-error queries; theory ~300/<800 traces partial/full on 348864; Sec.5 demo 100% full-support @3488 traces/key",
-    "url": "https://tches.iacr.org/"
+    "url": "https://doi.org/10.46586/tches.v2022.i4.800-827"
   },
   {
     "title": "A More Accurate and Robust Binary Ring-LWE Decryption Scheme and Its Hardware Implementation for IoT Devices",
@@ -6126,7 +6126,7 @@
       "pqc-implementation"
     ],
     "innovation": "Integer-GS NTRU KEM (GGH/Babai, no p); BAT-512 CT 473B/PK 521B; AVX2 encaps/decaps ~11k/60k",
-    "url": "https://tches.iacr.org/"
+    "url": "https://doi.org/10.46586/tches.v2022.i2.240-265"
   },
   {
     "title": "Complete and Improved FPGA Implementation of Classic McEliece",
@@ -6139,7 +6139,7 @@
       "pqc-implementation"
     ],
     "innovation": "First CT FPGA Classic McEliece KEM (KeyGen+Encap+Decap); HEA/SPEA/DPEA systemizers 2.2-2.6x vs WSN; Artix-7 KeyGen 5.2-20ms Encap 0.1-0.5ms Decap 0.7-1.5ms",
-    "url": "https://tches.iacr.org/"
+    "url": "https://doi.org/10.46586/tches.v2022.i3.71-113"
   },
   {
     "title": "Curse of Re-encryption: A Generic Power/EM Analysis on Post-Quantum KEMs",
@@ -6348,7 +6348,7 @@
       "lattice-cryptosystem"
     ],
     "innovation": "Signed Plantard for LBC; M4 Kyber NTT/INTT +25.02%/18.56%; NTTRU +83.21%/78.64%; first M4 asm NTTRU",
-    "url": "https://tches.iacr.org/"
+    "url": "https://doi.org/10.46586/tches.v2022.i4.614-636"
   },
   {
     "title": "Masked Accelerators and Instruction Set Extensions for Post-Quantum Cryptography",
@@ -6453,7 +6453,7 @@
       "code-based-cryptosystem"
     ],
     "innovation": "Artix-7 BIKE: CT sparse mul + extGCD inv; LW 3777 slices K/E/D 3797/443/6896 us; keygen ~5.5x vs Fermat",
-    "url": "https://tches.iacr.org/"
+    "url": "https://doi.org/10.46586/tches.v2022.i1.557-588"
   },
   {
     "title": "Roulette: A Diverse Family of Feasible Fault Attacks on Masked Kyber",
@@ -6466,7 +6466,7 @@
       "lattice-cryptosystem"
     ],
     "innovation": "IndoCrypt Kyber inequality FA → Roulette: larger FO surface, cheap faults, masking helps; CW masked M4; ~25% err / ~1 min solver",
-    "url": "https://tches.iacr.org/"
+    "url": "https://doi.org/10.46586/tches.v2022.i4.637-660"
   },
   {
     "title": "SIKE Channels: Zero-Value Side-Channel Attacks on SIKE",
@@ -6479,7 +6479,7 @@
       "pqc-implementation"
     ],
     "innovation": "Zero-value SCA bypasses coord randomization; ladder t-test ~30 traces/bit; isogeny CPA 208/208 bits @1000 runs; CLN fix +12.9%",
-    "url": "https://tches.iacr.org/"
+    "url": "https://doi.org/10.46586/tches.v2022.i3.264-289"
   },
   {
     "title": "Single-Trace Side-Channel Attacks on the Toom-Cook: The Case Study of Saber",
@@ -6492,7 +6492,7 @@
       "lattice-cryptosystem"
     ],
     "innovation": "First single-trace SASCA on Toom-Cook (Saber); Bayes SFG+improved BP; DL+EM on Cortex-M3",
-    "url": "https://tches.iacr.org/"
+    "url": "https://doi.org/10.46586/tches.v2022.i4.285-310"
   },
   {
     "title": "The Hidden Parallelepiped Is Back Again: Power Analysis Attacks on Falcon",
@@ -6505,7 +6505,7 @@
       "lattice-cryptosystem"
     ],
     "innovation": "Falcon CPA on FFT pre-image (2k/5k traces) + SPA BaseSampler filtered HPP; Falcon-512 key @5-10M sigs / ~1M+BKZ trade-off; Alg.3 HW-gap fix",
-    "url": "https://tches.iacr.org/"
+    "url": "https://doi.org/10.46586/tches.v2022.i3.141-164"
   },
   {
     "title": "Verified NTT Multiplications for NISTPQC KEM Lattice Finalists: Kyber, SABER, and NTRU",
@@ -6518,7 +6518,7 @@
       "lattice-cryptosystem"
     ],
     "innovation": "First CryptoLine verify of Kyber/Saber/NTRU NTT asm (AVX2+M4); non-local cuts+ghosts; 6 instances; Kyber AVX2 NTT 454s",
-    "url": "https://tches.iacr.org/"
+    "url": "https://doi.org/10.46586/tches.v2022.i4.718-750"
   },
   {
     "title": "2Deep: Enhancing Side-Channel Attacks on Lattice-Based Key-Exchange via 2-D Deep Learning",
@@ -6557,7 +6557,7 @@
       "lattice-cryptosystem"
     ],
     "innovation": "First DL power SCA on first-order masked Saber [BDK+20]; higher-order msg recovery without mask extract; poly_A2A leakage; ECC key recovery @24 traces",
-    "url": "https://tches.iacr.org/"
+    "url": "https://doi.org/10.46586/tches.v2021.i4.676-707"
   },
   {
     "title": "Attacking and Defending Masked Polynomial Comparison for Lattice-Based Cryptography",
@@ -6570,7 +6570,7 @@
       "lattice-cryptosystem"
     ],
     "innovation": "Break OSPG18/BPO+20 FO masked compare (SCA+collision); ReduceComparisons fix; FNvR TVLA",
-    "url": "https://tches.iacr.org/"
+    "url": "https://doi.org/10.46586/tches.v2021.i3.334-359"
   },
   {
     "title": "Batching CSIDH Group Actions using AVX-512",
@@ -6583,7 +6583,7 @@
       "isogeny-cryptosystem"
     ],
     "innovation": "First AVX-512/IFMA CT CSIDH-512; Combined batching 3.64x throughput vs CCC+19; low-latency IFMA 1.54x",
-    "url": "https://tches.iacr.org/"
+    "url": "https://doi.org/10.46586/tches.v2021.i4.618-649"
   },
   {
     "title": "Chosen Ciphertext k-Trace Attacks on Masked CCA2 Secure Kyber",
@@ -6596,7 +6596,7 @@
       "lattice-cryptosystem"
     ],
     "innovation": "Sparse CC INTT + BP SASCA; k-trace Kyber512/768/1024 full key @ sigma<=1.2 masked; open BayesianSCA/k-trace-CCA",
-    "url": "https://tches.iacr.org/"
+    "url": "https://doi.org/10.46586/tches.v2021.i4.88-113"
   },
   {
     "title": "Classic McEliece on the ARM Cortex-M4",
@@ -6609,7 +6609,7 @@
       "code-based-cryptosystem"
     ],
     "innovation": "CT Classic McEliece on stm32f4-Discovery (PK in flash); L1 encap/decap 582k/2.7M cyc; ~80x/~17x vs FrodoKEM",
-    "url": "https://tches.iacr.org/"
+    "url": "https://doi.org/10.46586/tches.v2021.i3.125-148"
   },
   {
     "title": "Compact Dilithium Implementations on Cortex-M3 and Cortex-M4",
@@ -6622,7 +6622,7 @@
       "lattice-cryptosystem"
     ],
     "innovation": "Dilithium M4 NTT -20%; first CT Dilithium on M3 (D3 2.6M/10.7M/2.3M kcc); Sign <12kB; first M3 Kyber/NewHope",
-    "url": "https://tches.iacr.org/"
+    "url": "https://doi.org/10.46586/tches.v2021.i1.1-24"
   },
   {
     "title": "CTIDH: faster constant-time CSIDH",
@@ -6817,7 +6817,7 @@
       "multivariate-cryptosystem"
     ],
     "innovation": "First M4 RainbowI; bitsliced F16; classic sign ~957k / verify ~239k cycles",
-    "url": "https://tches.iacr.org/"
+    "url": "https://doi.org/10.46586/tches.v2021.i4.650-675"
   },
   {
     "title": "Reliable Architectures for Composite-Field-Oriented Constructions of McEliece Post-Quantum Cryptography on FPGA",
@@ -6843,7 +6843,7 @@
       "pqc-implementation"
     ],
     "innovation": "Masked KKW/Picnic3 NIo; M4 Sel.Half 1.81Ã- vs All-SNI 5.50Ã-; unprotected leak @2725 traces; TVLA 1e5/1e6",
-    "url": "https://tches.iacr.org/"
+    "url": "https://doi.org/10.46586/tches.v2021.i4.239-282"
   },
   {
     "title": "A Compact and Scalable Hardware/Software Co-design of SIKE",
@@ -7028,7 +7028,7 @@
       "signature-algorithm"
     ],
     "innovation": "Picnic3: N=16 + full-S-box LowMC + MPC opts; sign 7.9-13.9x / verify 4.5-5.5x vs Picnic2; L1 ~5.2/4.0 ms, 12.6 KB",
-    "url": "https://tches.iacr.org/"
+    "url": "https://doi.org/10.13154/tches.v2020.i4.154-188"
   },
   {
     "title": "Lattice-Based Cryptoprocessor for CCA-Secure Identity-Based Encryption",
@@ -7262,7 +7262,7 @@
       "code-based-cryptosystem"
     ],
     "innovation": "Full-index multi-trace CPA + single-trace SOST/SPA on Chou CT QC-MDPC multiply; BIKE/LEDAcrypt in scope",
-    "url": "https://tches.iacr.org/"
+    "url": "https://doi.org/10.13154/tches.v2019.i4.180-212"
   },
   {
     "title": "NTTRU: Truly Fast NTRU Using NTT",
@@ -7327,7 +7327,7 @@
       "lattice-cryptosystem"
     ],
     "innovation": "NTT-domain cold-boot attack: Kyber ~3Â·2^43 vs 2^70 non-NTT @Ï0=1%; New Hope similar either encoding",
-    "url": "https://tches.iacr.org/"
+    "url": "https://doi.org/10.13154/tches.v2018.i3.173-213"
   },
   {
     "title": "CRYSTALS-Dilithium: A Lattice-Based Digital Signature Scheme",
@@ -7393,7 +7393,7 @@
       "multivariate-cryptosystem"
     ],
     "innovation": "First CPA full MQ key recovery; Rainbow equiv keys 30 traces; hybrid CPA+KRA; CW-lite XMEGA128",
-    "url": "https://tches.iacr.org/"
+    "url": "https://doi.org/10.13154/tches.v2018.i3.500-523"
   },
   {
     "title": "SIDH on ARM: Faster Modular Multiplications for Faster Post-Quantum Supersingular Isogeny Key Exchange",
@@ -7406,7 +7406,7 @@
       "isogeny-cryptosystem"
     ],
     "innovation": "Unified ARM/NEON Mont mul; SIDHp503 176 Mcc A15 / 90 Mcc A72; ~1.7x vs prior ASM",
-    "url": "https://tches.iacr.org/"
+    "url": "https://doi.org/10.13154/tches.v2018.i3.1-20"
   },
   {
     "title": "Standard Lattice-Based Key Encapsulation on Embedded Devices",
@@ -7419,7 +7419,7 @@
       "circuit-design"
     ],
     "innovation": "First FrodoKEM on Artix-7+Cortex-M4; Decaps ~49 ops/s n=640; MCU stack â'66%; AES path ~836 ms full KEX",
-    "url": "https://tches.iacr.org/"
+    "url": "https://doi.org/10.46586/tches.v2018.i3.372-393"
   },
   {
     "title": "Compact Constant Weight Coding Engines for the Code-Based Cryptography",
