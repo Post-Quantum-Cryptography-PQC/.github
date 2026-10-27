@@ -88,7 +88,7 @@
       "side-channel-countermeasure"
     ],
     "innovation": "HOPE-MLKEM open full-HW FIPS 203 with scalable high-order masking; Artix-7 NBU=2 unprot 2.1/3.2/4.4k cc @180 MHz; HO 68k LUT; TVLA",
-    "url": "https://tches.iacr.org/index.php/TCHES/article/view/"
+    "url": "https://doi.org/10.46586/tches.v2026.i2.272-295"
   },
   {
     "title": "A Generalized ISD Framework for Large-Weight Syndrome Decoding",
@@ -570,7 +570,7 @@
       "pqc-implementation"
     ],
     "innovation": "Runtime-reconfigurable EReA for CMcE Encap/Decap: four-way MVM + 32-lane Horner PolyEval on Artix-7; ATP up to 1.98x/5.19x vs [8]/[12] at 348864",
-    "url": "https://ieeexplore.ieee.org/document/"
+    "url": "https://doi.org/10.1109/TVLSI.2026.3716302"
   },
   {
     "title": "An Improved Hybrid Dual Attack on LWE with Sparse Secrets and its Application to FHE",
@@ -3193,7 +3193,7 @@
       "lattice-cryptosystem"
     ],
     "innovation": "SPA on Falcon Conditional calculator; 99.52% FFT control bits; key recovery 0.12s/21s; advanced OK @5k corrupt (~9.3%); phase fail >28.2%",
-    "url": "https://tches.iacr.org/index.php/TCHES/article/view/"
+    "url": "https://doi.org/10.46586/tches.v2026.i2.953-975"
   },
   {
     "title": "SERP-SCA: A Strengthened Side-Channel Attack Framework for FALCON Signature",
@@ -4892,7 +4892,7 @@
   {
     "title": "The May-Ozerov Algorithm for Syndrome Decoding is \"Galactic\"",
     "authors": "Charles Bouillaguet; Claire Delaplace; MickaÃ«l Hamdad",
-    "year": "2025 (CiC Vol. 2 No. 1); ePrint 2024/393",
+    "year": "2025 (CiC Vol. 2 No. 1)",
     "venue": "IACR Communications in Cryptology",
     "category": "cryptanalysis-algorithm, code-based-cryptosystem",
     "categories": [
@@ -4900,7 +4900,7 @@
       "code-based-cryptosystem"
     ],
     "innovation": "Proves that May-Ozerov nearest-neighbor (MO-NN) ISD is \"galactic\": better asymptotics than the folklore Projection Method only at enormous sizes.",
-    "url": "https://eprint.iacr.org/2024/393"
+    "url": "https://doi.org/10.62056/akjbksuc2"
   },
   {
     "title": "The Syndrome Weight Distribution in Quasi-Cyclic Codes, Applications to BIKE and HQC",
@@ -6178,7 +6178,7 @@
       "system-architecture"
     ],
     "innovation": "First GPU DP2A for Frodo/Saber; Frodo 4.37x vs [12] on V100; first Saber GPU 124418/120463/31658 KX/s on RTX3080/V100/T4",
-    "url": "https://github.com/benlwk/DPCrypto"
+    "url": "https://doi.org/10.1109/TCSI.2022.3176966"
   },
   {
     "title": "Efficient Error Detection Architectures for Postquantum Signature Falcon’s Sampler and KEM SABER",
@@ -7093,7 +7093,7 @@
       "pqc-implementation"
     ],
     "innovation": "Compile-time-parameterized constant-time lattice blocks (cSHAKE, binary-search CDT, CT-GS NTT/ModMul, SparseMul) on standard 32-bit APB RISC-V, first HW/SW of Round-2 provably secure qTESLA; Tan Table I Wang [16] modular-arithmetic baseline",
-    "url": "https://tches.iacr.org/index.php/TCHES/article/view/8589"
+    "url": "https://doi.org/10.13154/tches.v2020.i3.269-306"
   },
   {
     "title": "Power Analysis on NTRU Prime",
@@ -7380,7 +7380,7 @@
       "lattice-cryptosystem"
     ],
     "innovation": "First CCA Saber on M0/M4; M4 1,147K/1,444K/1,543K cycles; M0 â¤6.2KB stack; JIT matrix + Roche Karatsuba; DSP schoolbook vs NTT",
-    "url": "https://tches.iacr.org/index.php/TCHES/article/view/7270"
+    "url": "https://doi.org/10.13154/tches.v2018.i3.243-266"
   },
   {
     "title": "Side-Channel Attacks on Post-Quantum Signature Schemes based on Multivariate Quadratic Equations",
@@ -7705,7 +7705,7 @@
       "knapsack-cryptosystem"
     ],
     "innovation": "Argues Merkle-Hellman knapsack PKC security is greatly exaggerated, identifying four fundamental weaknesses of modular trapdoor constructions.",
-    "url": "https://doi.org/10.1109/TIT.1984.1056938"
+    "url": "https://doi.org/10.1109/TIT.1984.1056932"
   },
   {
     "title": "Cryptanalytic Attacks on the Multiplicative Knapsack Cryptosystem and on Shamir's Fast Signature Scheme",
