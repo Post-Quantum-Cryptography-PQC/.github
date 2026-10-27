@@ -5217,14 +5217,14 @@
     "title": "Faster Signatures from MPC-in-the-Head",
     "authors": "Dung Bui; Eliana Carozza; Geoffroy Couteau; Dahmun Goudarzi; Antoine Joux",
     "year": "2024",
-    "venue": "ASIACRYPT 2024 (IACR Cryptology ePrint Archive 2024/040; HAL hal-04770548)",
+    "venue": "ASIACRYPT 2024 (IACR Cryptology ePrint Archive 2024/252; HAL hal-04770548)",
     "category": "code-based-cryptosystem, pqc-implementation",
     "categories": [
       "code-based-cryptosystem",
       "pqc-implementation"
     ],
     "innovation": "AES-based multi-instance puncturable PRF (PPRF) in the ideal cipher model, as a drop-in replacement for salted hash-based GGM trees used in MPCitH signatures (12x-55x faster onâ¦",
-    "url": "https://eprint.iacr.org/2024/040"
+    "url": "https://eprint.iacr.org/2024/252"
   },
   {
     "title": "Gadget-based Masking of Streamlined NTRU Prime Decapsulation in Hardware",
